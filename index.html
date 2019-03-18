@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Lab 1 - Reservations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    
+</head>
+<body>
+    <div id="pickYouTableMain" class="mainCenter">
+        <div id="headers" class="headersIntro">
+            <h1>Table Finder</h1>
+            <h3>Pick your table now</h3>
+        </div>
+        <div id="blockOfTables" class="centerBlockOfTables">
+            <div id="firstRow" class="firstRowCircles">
+                <button type="button" id="1" class="tableClass">1</button>
+                <button type="button" id="2" class="tableClass">2</button>
+                <button type="button" id="3" class="tableClass">3</button>
+            </div>
+            <div id="secondRow" class="secondRowCircles">
+                <button type="button" id="4" class="tableClass">4</button>
+                <button type="button" id="5" class="tableClass">5</button>
+                <button type="button" id="6" class="tableClass">6</button>
+            </div>
+            <div id="thirdRow" class="thirdRowCircles">
+                <button type="button" id="7" class="tableClass">7</button>
+                <button type="button" id="8" class="tableClass">8</button>
+                <button type="button" id="9" class="tableClass">9</button>
+                
+            </div>
+        </div>
+
+        <div id="myModal" class="modal hide">
+            <div class="modal-content">
+                <div class="callout" data-closable>
+                    <button type="button" class="close-button" data-closable="modal">&times;</button>
+                </div>
+                <h2>New Reservation</h2>
+                <p id="confirmTable">Table Number: <span class="confirmingTable"></span></span></p>
+                <input type="text" class="name" placeholder="Name"> 
+                <input type="tel" class="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="888-888-8888">
+                <input type="text" class="partyNumber" placeholder="How Many People?">
+                <button type="button" id="modalButton" class="popModalButton">SAVE</button>
+              
+            </div>
+            
+        </div>
+    
+    
+
+
+
+        <script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+</body>
+</html>

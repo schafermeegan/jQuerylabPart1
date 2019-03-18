@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E1D7D4;
+    display: flex;
+    justify-content: center;
+    padding: 8%;
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+
+}
+
+.mainCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headersIntro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.centerBlockOfTables {
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    
+}
+
+
+.tableClass {
+    border-radius: 50%;
+    border: none;
+    padding: 40px 40px;
+    background-color: #EEE;
+    color: #ADAAAA;
+    outline: none;
+}
+
+.tableClass:hover {
+    background-color: #adaaaa;
+    color: #CCC;
+}
+
+.firstRowCircles, .secondRowCircles, .thirdRowCircles {
+    padding: 5px;
+}
+
+#tableOne {
+    
+}
+
+h1, h2 {
+    font-family: 'Rubik', sans-serif;
+    color: #E34E45;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+h3 {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    font-size: 700;
+}
+
+h2 {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+#myModal {
+    position: absolute;
+    width: 370px;
+    height: 400px;
+    background: white;
+    margin-top: 100px;
+}
+
+.modal {
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+    
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 360px;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.popModalButton {
+    color: white;
+    background-color: #008000;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.confirmingTable {
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+#confirmTable {
+        font-weight: 700;
+        font-family: 'Roboto Mono', monospace;
+}
+
+.close-button {
+    color: #ADAAAA;
+    background-color: white;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+
+.callout {
+    display: flex;
+    justify-content: flex-end;
+}
+
+input {
+    box-shadow: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.available {
+    cursor: pointer;
+    background-color: #EEE;
+}
+
+.reserved {
+    cursor: not-allowed;
+    background-color: #ADAAAA;
+    color: white;
+}
